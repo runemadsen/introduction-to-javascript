@@ -74,7 +74,7 @@ The purpose of this 3-hour session is to talk about Javascript: What it is, how 
 
 ## Advanced Libraries
 
-* [D3](http://d3js.org/) ([Examples]((https://github.com/mbostock/d3/wiki/Gallery)))
+* [D3](http://d3js.org/) ([Examples](https://github.com/mbostock/d3/wiki/Gallery))
 * [Processing.js](http://processingjs.org/)
 * [Paper.js](http://paperjs.org/)
 * [List of good libraries for data visualization](http://selection.datavisualization.ch/)
