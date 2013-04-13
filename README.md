@@ -70,9 +70,9 @@
 * **Example:** [Radar chart](https://github.com/runemadsen/introduction-to-javascript/blob/master/chart_radar.html)
 
 
-## D3.js
+## Advanced Libraries
 
-* What is D3.js?
-* How does it work?
-* **Example:** [something](#)
-* **Example:** [something](#)
+* [D3](http://d3js.org/) ([Examples]((https://github.com/mbostock/d3/wiki/Gallery)))
+* [Processing.js](http://processingjs.org/)
+* [Paper.js](http://paperjs.org/)
+* [List of good libraries for data visualization](http://selection.datavisualization.ch/)
