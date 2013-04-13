@@ -16,12 +16,13 @@
 
 * How the web works
 * HTML, CSS and JS go together
+* I'm using bootstrap.css as a styling library in these examples
 
 
 ## What is Javascript?
 
 * Runs in the browser
-* How to embed on a website
+* How to embed on a website (2 ways)
 * Javascript examples
    * [9/11 Tapes](http://www.nytimes.com/interactive/2011/09/08/nyregion/911-tapes.html)
    * [512 paths to the White House](http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html)
@@ -43,7 +44,7 @@
 * What is jQuery?
 * Downloading and embedding jQuery
 * How does jQuery work
-* Using the jQuery.com documenation
+* Using the jQuery.com documentaion
 * **Example:** [Toggle menu with jQuery](#)
 * **Example:** [Something with jQuery animate](#)
 * Using jQuery Plugins
