@@ -54,7 +54,7 @@
    * jQuery Mobile
    * jQuery Tools
 * **Plugin Example:** [jQuery scrollto](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_scrollto.html)
-* **Plugin Example:** [jQuery tools image slideshow](#)
+* **Plugin Example:** [jQuery tools image slideshow](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_scrollable.html)
 
 
 ## Chart.js
