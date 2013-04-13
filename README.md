@@ -47,12 +47,16 @@
 * Using the jQuery.com documentaion
 * **Example:** [Toggle menu with jQuery](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_toggle.html)
 * **Example:** [Something with jQuery animate](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_animate.html)
-* Using jQuery Plugins
-   * How to find a plugin: [plugins.jquery.com](http://plugins.jquery.com/)
-   * How to add a plugin
-   * jQuery UI
-   * jQuery Mobile
-   * jQuery Tools
+
+# jQuery Plugins
+
+* What is a jQuery plugin?
+* How to find a plugin: [plugins.jquery.com](http://plugins.jquery.com/)
+* How to add a plugin
+* Example plugins
+   * [jQuery UI](http://jqueryui.com/)
+   * [jQuery Mobile](http://jquerymobile.com/)
+   * [jQuery Tools](http://jquerytools.org/)
 * **Plugin Example:** [jQuery scrollto](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_scrollto.html)
 * **Plugin Example:** [jQuery tools image slideshow](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_scrollable.html)
 
