@@ -45,8 +45,8 @@
 * Downloading and embedding jQuery
 * How does jQuery work
 * Using the jQuery.com documentaion
-* **Example:** [Toggle menu with jQuery](#)
-* **Example:** [Something with jQuery animate](#)
+* **Example:** [Toggle menu with jQuery](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_toggle.html)
+* **Example:** [Something with jQuery animate](https://github.com/runemadsen/introduction-to-javascript/blob/master/jquery_animate.html)
 * Using jQuery Plugins
    * How to find a plugin: [plugins.jquery.com](http://plugins.jquery.com/)
    * How to add a plugin

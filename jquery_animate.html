@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery Toggle</title>
+		<link rel="stylesheet" href="stylesheets/bootstrap.css" />
+		<script type="text/javascript" src="javascripts/jquery.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+  		
+				$("a").click(function() {
+					
+					$(".alert").animate({ 
+       		  opacity: 0.4,
+       		  marginTop: "300px",
+        		fontSize: "3em", 
+        		borderWidth: "10px"
+      		}, 1500 );
+   
+					return false;
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+
+			<h1>jQuery Toggle Example</h1>
+
+			<a href="#" class="btn">Show me some info!</a>
+
+			<div class="alert">
+  			This is some info! Yeah!!!!
+			</div>
+
+		</div>
+	</body>
+</html>
