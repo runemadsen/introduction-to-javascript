@@ -1,5 +1,7 @@
 # Introduction to Javascript
 
+The purporse of this 3-hour session is to talk about Javascript: What it is, how it's used on the web, and how we can take advantage of Javascript libraries with only a minimal understanding of programming.
+
 ## Introduction
 
 * Teacher introduction
