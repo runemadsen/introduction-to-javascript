@@ -65,9 +65,9 @@
 
 * What is chart.js?
 * How does it work?
-* **Example:** [Line chart](#)
-* **Example:** [Pie chart](#)
-* **Example:** [Radar chart](#)
+* **Example:** [Doughnut chart](https://github.com/runemadsen/introduction-to-javascript/blob/master/chart_doughnut.html)
+* **Example:** [Line chart](https://github.com/runemadsen/introduction-to-javascript/blob/master/chart_line.html)
+* **Example:** [Radar chart](https://github.com/runemadsen/introduction-to-javascript/blob/master/chart_radar.html)
 
 
 ## D3.js
