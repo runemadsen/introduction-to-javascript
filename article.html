@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Article</title>
+		<link rel="stylesheet" href="stylesheets/bootstrap.css" />
+		<script type="text/javascript" src="javascripts/jquery.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.scrollto.js"></script>
+		<script type="text/javascript" src="javascripts/chart.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+  		
+  			/* Setup Links
+  			----------------------------------------------------- */
+
+				$("#first-row-link").click(function() {
+					$.scrollTo("#second-row", 800);
+					return false;
+				});
+
+				$("#second-row-link").click(function() {
+					$.scrollTo("#third-row", 800);
+					return false;
+				});
+
+				$("#third-row-link").click(function() {
+					$.scrollTo("#first-row", 1600);
+					return false;
+				});
+
+				/* Album Sales Graph
+  			----------------------------------------------------- */
+
+				var ctx = $("#myChart").get(0).getContext("2d");
+
+				// Data from here: http://www.greasylake.org/the-circuit/index.php?/topic/107308-bruce-springsteen-career-to-date-albums-related/
+
+				var data = {
+					labels : [
+						"Born in the USA",
+						"Born to Run",
+						"The River",
+						"Tunnel of Love",
+						"Darkness",
+						"The Rising",
+						"Human Touch",
+						"Devils & Dust"
+
+					],
+					datasets : [
+						{
+							fillColor : "rgba(220,220,220,0.5)",
+							strokeColor : "rgba(220,220,220,1)",
+							pointColor : "rgba(220,220,220,1)",
+							pointStrokeColor : "#fff",
+							data : [15700000, 6300000, 5150000, 3700000, 3180000, 225000, 1250000, 675000]
+						},
+						{
+							fillColor : "rgba(151,187,205,0.5)",
+							strokeColor : "rgba(151,187,205,1)",
+							pointColor : "rgba(151,187,205,1)",
+							pointStrokeColor : "#fff",
+							data : [11880000, 2650000, 3580000, 3790000, 1820000, 2495000, 2375000, 955000]
+						}
+					]
+				}
+
+  			new Chart(ctx).Line(data);
+
+  			/* More Info
+  			----------------------------------------------------- */
+
+  			$("#bands").hide();
+  			$("#lyrics").hide();
+
+  			function resetAll()
+  			{
+  				$("#heros .hero-unit").hide();
+  				$("#info-links a").removeClass("btn-success").addClass("btn-inverse");
+  			}
+
+  			function showSection(name)
+  			{
+  				$(name + "-link").removeClass("btn-inverse").addClass("btn-success")
+  				$(name).show();
+  			}
+
+  			$("#awards-link").click(function()
+  			{
+  				resetAll();
+  				showSection("#awards")
+  				return false;
+  			});
+
+  			$("#bands-link").click(function()
+  			{
+  				resetAll();
+  				showSection("#bands")
+  				return false
+  			});
+
+  			$("#lyrics-link").click(function()
+  			{
+  				resetAll();
+  				showSection("#lyrics")
+  				return false
+  			});
+
+
+			});
+
+		</script>
+		<style type="text/css">
+			.row {
+				padding-top: 40px;
+				margin-bottom: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="row" id="first-row">
+
+				<div class="span6">
+					<img src="http://cdn1.viagogo.net/img/cat/4243/1/17.jpg" />
+				</div>
+
+				<div class="span6">
+					<h1>Bruce Springsteen</h1>
+
+					<p class="lead">Bruce Frederick Joseph Springsteen, nicknamed "The Boss", is an American singer-songwriter and multi-instrumentalist who records and tours with the E Street Band.</p>
+
+					<p>Springsteen is widely known for his brand of heartland rock, poetic lyrics, Americana sentiments centered on his native New Jersey and his lengthy and energetic stage performances, with concerts from the 1970s to the present decade running up to an uninterrupted 250 minutes in length.</p>
+
+					<p><a href="#" id="first-row-link" class="btn btn-info btn-large">Next</a></p>
+				</div>
+
+			</div>
+
+			<div class="row" id="second-row">
+
+				<div class="span3">
+					<h2>Album Sales</h2>
+					<p>Springsteen's recordings have included both commercially accessible rock albums and more somber folk-oriented works. His most successful studio albums, Born in the U.S.A. and Born to Run, showcase a talent for finding grandeur in the struggles of daily American life; he has sold more than 65 million albums in the United States and more than 120 million worldwide</p>
+
+					<p><a href="#" id="second-row-link" class="btn btn-info btn-large">Next</a></p>
+				</div>
+				<div class="span9">
+					<canvas id="myChart" width="700" height="400"></canvas>
+				</div>
+
+			</div>
+
+			<div class="row" id="third-row">
+
+				<div class="span3">
+					<h2>More Info</h2>
+					<div class="btn-group btn-group-vertical" id="info-links">
+						<a href="#" id="awards-link" class="btn btn-large btn-success">Awards</a>
+						<a href="#" id="bands-link" class="btn btn-large btn-inverse">Bands</a>
+						<a href="#" id="lyrics-link" class="btn btn-large btn-inverse">Lyrics</a>
+ 					</div>
+ 					<br /><br />
+ 					<p><a href="#" id="third-row-link" class="btn btn-info btn-large">Back to Top</a></p>
+				</div>
+				<div class="span9" id="heros">
+
+					<div class="hero-unit" id="awards">
+					  <h1>Awards</h1>
+					  <p>Bruce Springsteen has won 20 Grammy Awards, 2 Golden Globe Awards, and an Academy Award for "Streets of Philadelphia".</p>
+					</div>
+
+					<div class="hero-unit" id="bands">
+					  <h1>Bands</h1>
+					  <p>Bruce Springsteen has been a member of, or has been backed by, several bands during his career, most notably The E Street Band. Prior to signing his first record deal in 1972, Springsteen was a member of several bands including Steel Mill. In October 1972 he formed a new band for the recording of his debut album Greetings from Asbury Park, N.J., which became known as The E Street Band, although the name was not officially introduced until September 1974.</p>
+					</div>
+
+					<div class="hero-unit" id="lyrics">
+					  <h1>Lyrics</h1>
+					  <p>Often described as cinematographic in their scope, Springsteen's lyrics frequently explore highly personal themes such as individual commitment, dissatisfaction and dismay with life in a context of every day situations.</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+</html>
